@@ -125,7 +125,10 @@ public class DeliveryManager : NetworkBehaviour {
     public List<RecipeSO> GetWaitingRecipeSOList() {
         return waitingRecipeSOList;
     }
-
+    public void SaveHightScore()
+    {
+        DataManager.Instance.SaveHighScore(successfulRecipesAmount);
+    }
     public int GetSuccessfulRecipesAmount() {
         return successfulRecipesAmount;
     }
